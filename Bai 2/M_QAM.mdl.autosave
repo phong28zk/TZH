@@ -104,8 +104,8 @@ Model {
 	LoadSaveID		"0"
 	Extents			[920.0, 797.0]
 	ZoomFactor		[1.5]
-	Offset			[530.53333333333228, -25.563187615863114]
-	SceneRectInView		[530.53333333333228, -25.563187615863114, 613.33333333333337, 531.33333333333337]
+	Offset			[530.53333333333114, -25.563187615863114]
+	SceneRectInView		[530.53333333333114, -25.563187615863114, 613.33333333333337, 531.33333333333337]
       }
       Array {
 	Type			"Simulink.DockComponentInfo"
@@ -164,7 +164,7 @@ Model {
   LastModifiedBy	  "Leon8dem1god"
   ModifiedDateFormat	  "%<Auto>"
   LastModifiedDate	  "Tue Apr 18 21:26:24 2023"
-  RTWModifiedTimeStamp	  603792511
+  RTWModifiedTimeStamp	  603796715
   ModelVersionFormat	  "%<AutoIncrement:18.1>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -286,7 +286,7 @@ Model {
 	  Description		  ""
 	  Components		  []
 	  StartTime		  "0.0"
-	  StopTime		  "1000"
+	  StopTime		  "10"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
 	  FixedStep		  "auto"
@@ -1175,7 +1175,7 @@ Model {
       Name		      "AWGN\nChannel1"
       SID		      "79"
       Ports		      [1, 1]
-      Position		      [835, 206, 930, 264]
+      Position		      [705, 131, 800, 189]
       ZOrder		      -1
       LibraryVersion	      "5.0"
       UserDataPersistent      on
@@ -1191,11 +1191,11 @@ Model {
       ContentPreviewEnabled   off
       InputProcessing	      "Columns as channels (frame based)"
       seed		      "67"
-      noiseMode		      "Signal to noise ratio  (Eb/No)"
-      EbNodB		      "-10"
+      noiseMode		      "Signal to noise ratio  (SNR)"
+      EbNodB		      "-2"
       EsNodB		      "3"
-      SNRdB		      "10"
-      bitsPerSym	      "4"
+      SNRdB		      "8"
+      bitsPerSym	      "2"
       Ps		      "1"
       Tsym		      "1/1000"
       variance		      "1"
@@ -1269,7 +1269,7 @@ Model {
       RTWMemSecDataInternal   "Inherit from model"
       RTWMemSecDataParameters "Inherit from model"
       ContentPreviewEnabled   off
-      mul		      "16"
+      mul		      "8"
       seed		      "35"
       Ts		      "1/1000"
       frameBased	      off
@@ -1282,14 +1282,14 @@ Model {
       Name		      "Rectangular QAM\nDemodulator\nBaseband"
       SID		      "93"
       Ports		      [1, 1]
-      Position		      [580, 64, 655, 116]
+      Position		      [880, 134, 955, 186]
       ZOrder		      7
       LibraryVersion	      "3.0"
       SourceBlock	      "commdigbbndam3/Rectangular QAM\nDemodulator\nBaseband"
       SourceType	      "Rectangular QAM Demodulator Baseband"
       SourceProductBaseCode   "CM"
       MultithreadedSim	      "auto"
-      M			      "16"
+      M			      "8"
       OutType		      "Integer"
       DecType		      "Hard decision"
       VarSource		      "Dialog"
@@ -1329,14 +1329,14 @@ Model {
       Name		      "Rectangular QAM\nModulator\nBaseband"
       SID		      "92"
       Ports		      [1, 1]
-      Position		      [225, 64, 300, 116]
+      Position		      [515, 114, 590, 166]
       ZOrder		      6
       LibraryVersion	      "3.0"
       SourceBlock	      "commdigbbndam3/Rectangular QAM\nModulator\nBaseband"
       SourceType	      "Rectangular QAM Modulator Baseband"
       SourceProductBaseCode   "CM"
       MultithreadedSim	      "auto"
-      M			      "16"
+      M			      "8"
       InType		      "Integer"
       Enc		      "Gray"
       Mapping		      "[0:15]"
@@ -1414,7 +1414,7 @@ Model {
       ",'MarkerEdgeColor','auto','MarkerFaceColor','none','Visible','on'),'AuxLineProperties',struct('LineColor',[1 1 0"
       ".0666666666666667],'LineStyle','-','TrajLineWidth',0.5,'RefConStyle','+','RefConSize',6,'RefConColor',[1 0 0],'R"
       "efConLineWidth',0.5)),extmgr.Configuration('Tools','Measurements',true,'Version','2021b'),extmgr.Configuration('"
-      "Tools','Plot Navigation',true)),'Version','2021b','Position',[972 77 143 139],'VisibleAtModelOpen','on')"
+      "Tools','Plot Navigation',true)),'Version','2021b','Position',[1237 98 143 37],'VisibleAtModelOpen','on')"
     }
     Line {
       ZOrder		      1
@@ -1423,6 +1423,7 @@ Model {
       Points		      [20, 0]
       Branch {
 	ZOrder			2
+	Points			[0, 50]
 	DstBlock		"Rectangular QAM\nModulator\nBaseband"
 	DstPort			1
       }
@@ -1469,7 +1470,7 @@ Model {
       ZOrder		      8
       SrcBlock		      "Rectangular QAM\nModulator\nBaseband"
       SrcPort		      1
-      Points		      [123, 0; 0, 145]
+      Points		      [53, 0; 0, 20]
       DstBlock		      "AWGN\nChannel1"
       DstPort		      1
     }
@@ -1477,7 +1478,6 @@ Model {
       ZOrder		      9
       SrcBlock		      "AWGN\nChannel1"
       SrcPort		      1
-      Points		      [19, 0; 0, -43; -398, 0; 0, -102]
       DstBlock		      "Rectangular QAM\nDemodulator\nBaseband"
       DstPort		      1
     }
@@ -1485,6 +1485,7 @@ Model {
       ZOrder		      10
       SrcBlock		      "Rectangular QAM\nDemodulator\nBaseband"
       SrcPort		      1
+      Points		      [19, 0; 0, -41; -218, 0; 0, -29]
       DstBlock		      "Error Rate\nCalculation"
       DstPort		      2
     }
