@@ -1,0 +1,31 @@
+function y = bpsk(fc, fs)
+    % Performs binary phase shift keying (BPSK) modulation
+    % Inputs:
+    %   data: binary data sequence (1xN)
+    %   fc: carrier frequency (Hz)
+    %   fs: sampling frequency (Hz)
+    % Output:
+    %   y: BPSK modulated signal (1xM), where M = N*fs/fc
+    data = randi([0 1], 1, 1000);
+    % Determine the length of the data sequence
+    N = length(data);
+    
+    % Determine the length of the modulated signal
+    M = ceil(N*fs/fc)*fc/fs;
+    
+    % Generate carrier signal
+    t = linspace(0, (M-1)/fs, M);
+    carrier = cos(2*pi*fc*t);
+    
+    % BPSK modulation
+    bpsk_mod = 2*data - 1; % Convert binary 0s and 1s to -1s and 1s
+    bpsk_signal = bpsk_mod .* carrier;
+    
+    % Output the modulated signal
+    y = bpsk_signal;
+
+    semilogy(t, abs(y));
+xlabel('Time (s)');
+ylabel('Amplitude (linear)');
+title('BPSK Modulated Signal (logarithmic scale)');
+end

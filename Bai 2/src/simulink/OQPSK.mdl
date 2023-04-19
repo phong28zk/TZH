@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-05-10T13:33:11Z</dcterms:created>
   <dc:creator>Ammar</dc:creator>
   <cp:lastModifiedBy>Leon8dem1god</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-04-18T14:30:41Z</dcterms:modified>
-  <cp:revision>14.0</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-04-19T00:34:37Z</dcterms:modified>
+  <cp:revision>18.0</cp:revision>
   <cp:version>R2021b</cp:version>
 </cp:coreProperties>
 
@@ -60,7 +60,7 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2014/corePropertiesExtension">
-  <uuid>bab17b3b-76e2-4236-8f6a-4cfaf29a485f</uuid>
+  <uuid>7c46516c-34c6-4df7-8e22-6634e9c4d238</uuid>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
@@ -80,6 +80,8 @@ __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
   <Relationship Id="ScheduleCore" Target="ScheduleCore.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleCore"/>
   <Relationship Id="ScheduleEditor" Target="ScheduleEditor.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleEditor"/>
   <Relationship Id="SimscapeModelParametersPlugin" Target="plugins/SimscapeModelParametersPlugin.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/pluginParameters"/>
+  <Relationship Id="UserData_107" Target="bdmxdata/UserData_107.mxarray" Type="http://schemas.mathworks.com/simulinkModel/2015/relationships/modelUserData"/>
+  <Relationship Id="UserData_108" Target="bdmxdata/UserData_108.mxarray" Type="http://schemas.mathworks.com/simulinkModel/2015/relationships/modelUserData"/>
   <Relationship Id="UserData_79" Target="bdmxdata/UserData_79.mxarray" Type="http://schemas.mathworks.com/simulinkModel/2015/relationships/modelUserData"/>
   <Relationship Id="graphicalInterface" Target="graphicalInterface.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
   <Relationship Id="system_root" Target="systems/system_root.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
@@ -126,6 +128,14 @@ __MWOPC_PART_BEGIN__ /simulink/bddefaults.xml
   </BlockParameterDefaults>
 </BlockDiagramDefaults>
 
+__MWOPC_PART_BEGIN__ /simulink/bdmxdata/UserData_107.mxarray BASE64
+AAFJTQAAAAAOAAAAiAAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAF
+AAQAEwAAAAEAAAATAAAAaGFzSW5oZXJpdGVkT3B0aW9uAAAAAAAADgAAADAAAAAGAAAACAAAAAkC
+AAAAAAAABQAAAAgAAAABAAAAAQAAAAEAAAAAAAAAAgABAAEAAAA==
+__MWOPC_PART_BEGIN__ /simulink/bdmxdata/UserData_108.mxarray BASE64
+AAFJTQAAAAAOAAAAiAAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAF
+AAQAEwAAAAEAAAATAAAAaGFzSW5oZXJpdGVkT3B0aW9uAAAAAAAADgAAADAAAAAGAAAACAAAAAkC
+AAAAAAAABQAAAAgAAAABAAAAAQAAAAEAAAAAAAAAAgABAAEAAAA==
 __MWOPC_PART_BEGIN__ /simulink/bdmxdata/UserData_79.mxarray BASE64
 AAFJTQAAAAAOAAAAiAAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAF
 AAQAEwAAAAEAAAATAAAAaGFzSW5oZXJpdGVkT3B0aW9uAAAAAAAADgAAADAAAAAGAAAACAAAAAkC
@@ -134,14 +144,13 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ModelInformation Version="1.0">
   <Model>
-    <P Name="ModelUUID">9202c3a7-a919-43fa-93d1-6341ce811603</P>
-    <P Name="OverrideScopeRefreshTime">off</P>
+    <P Name="ModelUUID">88dcc1d8-b067-4a92-970b-8e28760620dd</P>
     <P Name="LastSavedArchitecture">win64</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">603754078</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:14.0&gt;</P>
+      <P Name="RTWModifiedTimeStamp">603790073</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:18.0&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -752,7 +761,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
             <Array PropName="DisabledProps" Type="Cell" Dimension="1*22">
               <Cell Class="char">GeneratePreprocessorConditionals</Cell>
               <Cell Class="char">IncludeMdlTerminateFcn</Cell>
-              <Cell Class="char">GenerateAllocFcn</Cell>
+              <Cell Class="char">PreserveStateflowLocalDataDimensions</Cell>
               <Cell Class="char">SuppressErrorStatus</Cell>
               <Cell Class="char">ERTCustomFileBanners</Cell>
               <Cell Class="char">GenerateSampleERTMain</Cell>
@@ -765,7 +774,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
               <Cell Class="char">SupportAbsoluteTime</Cell>
               <Cell Class="char">SupportContinuousTime</Cell>
               <Cell Class="char">SupportNonInlinedSFcns</Cell>
-              <Cell Class="char">PreserveStateflowLocalDataDimensions</Cell>
+              <Cell Class="char">GenerateAllocFcn</Cell>
               <Cell Class="char">ExistingSharedCode</Cell>
               <Cell Class="char">ParenthesesLevel</Cell>
               <Cell Class="char">ERTMultiwordTypeDef</Cell>
@@ -933,7 +942,7 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
   <P Name="IsExportFunctionModel">0</P>
   <P Name="SimulinkSubDomainType">Simulink</P>
   <P Name="NumParameterArguments">0</P>
-  <P Name="NumExternalFileReferences">5</P>
+  <P Name="NumExternalFileReferences">7</P>
   <ExternalFileReference>
     <P Name="Reference">commchan3/AWGN
 Channel</P>
@@ -942,19 +951,10 @@ Channel</P>
     <P Name="Type">LIBRARY_BLOCK</P>
   </ExternalFileReference>
   <ExternalFileReference>
-    <P Name="Reference">commdigbbndpm3/BPSK
-Demodulator
-Baseband</P>
-    <P Name="Path">$bdroot/BPSK Demodulator Baseband</P>
-    <P Name="SID">6</P>
-    <P Name="Type">LIBRARY_BLOCK</P>
-  </ExternalFileReference>
-  <ExternalFileReference>
-    <P Name="Reference">commdigbbndpm3/BPSK
-Modulator
-Baseband</P>
-    <P Name="Path">$bdroot/BPSK Modulator Baseband</P>
-    <P Name="SID">7</P>
+    <P Name="Reference">commutil2/Bit to Integer
+Converter</P>
+    <P Name="Path">$bdroot/Bit to Integer Converter</P>
+    <P Name="SID">110</P>
     <P Name="Type">LIBRARY_BLOCK</P>
   </ExternalFileReference>
   <ExternalFileReference>
@@ -962,6 +962,29 @@ Baseband</P>
 Calculation</P>
     <P Name="Path">$bdroot/Error Rate Calculation</P>
     <P Name="SID">10</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">commutil2/Integer to Bit
+Converter</P>
+    <P Name="Path">$bdroot/Integer to Bit Converter</P>
+    <P Name="SID">109</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">commdigbbndpm3/OQPSK
+Demodulator
+Baseband</P>
+    <P Name="Path">$bdroot/OQPSK Demodulator Baseband</P>
+    <P Name="SID">108</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">commdigbbndpm3/OQPSK
+Modulator
+Baseband</P>
+    <P Name="Path">$bdroot/OQPSK Modulator Baseband</P>
+    <P Name="SID">107</P>
     <P Name="Type">LIBRARY_BLOCK</P>
   </ExternalFileReference>
   <ExternalFileReference>
@@ -977,8 +1000,8 @@ Generator</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="db61d4b1-79b1-4f29-a6b8-bfd901c9f600">
-    <Interface type="Interface" uuid="ae4c7ee5-ec18-4c96-b5a6-034dc9af3fba"/>
+  <System type="System" uuid="8ee4986b-2e7f-473c-a1ca-9b4f6ace0215">
+    <Interface type="Interface" uuid="a44e5fe5-c028-4c4c-bb49-2d668cbe402d"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
@@ -990,27 +1013,27 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="49b34044-d2a0-4327-ad89-c6e0f62ed2f8">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="b0eca2c2-aa9a-4f0a-b985-bbce0c8c17a5">
     <priorityDirection>HighNumberLast</priorityDirection>
-    <editorState type="sltp.mm.core.EditorState" uuid="344b6b43-7c6d-4cff-a4d5-6905d60387e0">
+    <editorState type="sltp.mm.core.EditorState" uuid="7176329d-b56f-4081-a397-d80718c506ae">
       <isSynchronized>true</isSynchronized>
-      <panelState type="sltp.mm.core.EditorPanelState" uuid="736a5ea5-c5d5-461a-9eca-9b80f9af3f11"/>
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="e61f107b-8b8d-492b-89a2-119db2bc2b85"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="ee923a3f-60ca-40f0-8b56-2aee9ca87b3d">
-      <context type="sltp.mm.core.Context" uuid="49b34044-d2a0-4327-ad89-c6e0f62ed2f8"/>
+    <rootTask type="sltp.mm.core.Task" uuid="d88851a9-344b-477a-abe1-a81720b6d118">
+      <context type="sltp.mm.core.Context" uuid="b0eca2c2-aa9a-4f0a-b985-bbce0c8c17a5"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="5f633f34-738d-4085-a6b6-d8d10db8690d">
-        <tasks type="sltp.mm.core.Task" uuid="ed8f7281-98bb-49b5-bb88-4ce1d5e88aab">
+      <subgraph type="sltp.mm.core.Graph" uuid="517c75ae-cdc1-425b-b316-b7a8019e61a9">
+        <tasks type="sltp.mm.core.Task" uuid="81c19647-63c0-463f-8e41-66e87023cd8f">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="49b34044-d2a0-4327-ad89-c6e0f62ed2f8"/>
+          <context type="sltp.mm.core.Context" uuid="b0eca2c2-aa9a-4f0a-b985-bbce0c8c17a5"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>FiM</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="1e6ec808-045f-48dd-9b55-79a6adcd3558">
+          <rates type="sltp.mm.core.Rate" uuid="7bc3a3c6-ccdc-42e8-8faa-e8d049a1bd32">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <identifier>ZOHContinuous01</identifier>
@@ -1020,7 +1043,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="6c0806ec-fc6d-4805-8316-5922876bb1e2">
+          <rates type="sltp.mm.core.Rate" uuid="6551a2d8-21f6-4c19-9fff-93d1dc8a1337">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -1037,27 +1060,9 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2021b_202101212121">
-  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="f4003bad-72bc-49aa-ab58-4fff4b70ce0e">
-    <entities type="diagram.editor.model.Entity" uuid="1b288aae-8d41-4aff-b86e-b519711fc013">
-      <position>0,0</position>
-      <size>0,0,0,0</size>
-      <syntaxElement type="sltp.mm.syntax.Node" uuid="fc1f811c-9f2a-4ed2-91c7-938fa0af315a"/>
-      <title>FiM</title>
-      <type>base</type>
-      <subDiagram type="diagram.editor.model.Diagram" uuid="2a9ca666-428f-43e8-ae0c-b16752eefe2a">
-        <position>0,0</position>
-        <syntaxElement type="sltp.mm.syntax.Graph" uuid="14d1d32e-0885-40bd-9fae-5d3676109122"/>
-        <title>FiM</title>
-        <type>graph.Graph</type>
-      </subDiagram>
-    </entities>
-    <syntaxElement type="sltp.mm.syntax.Graph" uuid="6e55f736-a308-423c-a3c2-cdd023e1d940"/>
-    <title>Default</title>
-    <type>graph.Graph</type>
-  </diagram.editor.model.Diagram>
-  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="9b931b44-1298-4f87-92de-15eb0d7670cb">
-    <rootGraph type="sltp.mm.syntax.Graph" uuid="6e55f736-a308-423c-a3c2-cdd023e1d940">
-      <children type="sltp.mm.syntax.Node" uuid="fc1f811c-9f2a-4ed2-91c7-938fa0af315a">
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="d09293ef-b69c-4755-adbc-c94ca2920443">
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="3d9acb0a-c744-433f-a6e2-faa24c21006e">
+      <children type="sltp.mm.syntax.Node" uuid="ad9c67e4-2a4f-4b44-93c6-db31389aca4c">
         <priority>40</priority>
         <rates type="sltp.mm.syntax.RateData">
           <color>#808080</color>
@@ -1072,33 +1077,52 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
         </rates>
         <title>FiM</title>
         <type>base</type>
-        <diagramElement type="diagram.editor.model.Entity" uuid="1b288aae-8d41-4aff-b86e-b519711fc013"/>
-        <subgraph type="sltp.mm.syntax.Graph" uuid="14d1d32e-0885-40bd-9fae-5d3676109122">
+        <diagramElement type="diagram.editor.model.Entity" uuid="1c90b434-d70b-4287-920a-44d9adaeb7ab"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="c5b98768-c7d5-4427-85f4-71f29332ccd4">
           <title>FiM</title>
-          <diagramElement type="diagram.editor.model.Diagram" uuid="2a9ca666-428f-43e8-ae0c-b16752eefe2a"/>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="715852f1-fd1d-48fd-92e6-d61c8fb8656f"/>
         </subgraph>
       </children>
       <title>Default</title>
-      <diagramElement type="diagram.editor.model.Diagram" uuid="f4003bad-72bc-49aa-ab58-4fff4b70ce0e"/>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="e8b5103d-c411-4271-a9d6-bb06dc8c8f6a"/>
     </rootGraph>
   </sltp.mm.syntax.Context>
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="e8b5103d-c411-4271-a9d6-bb06dc8c8f6a">
+    <entities type="diagram.editor.model.Entity" uuid="1c90b434-d70b-4287-920a-44d9adaeb7ab">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="ad9c67e4-2a4f-4b44-93c6-db31389aca4c"/>
+      <title>FiM</title>
+      <type>base</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="715852f1-fd1d-48fd-92e6-d61c8fb8656f">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="c5b98768-c7d5-4427-85f4-71f29332ccd4"/>
+        <title>FiM</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="3d9acb0a-c744-433f-a6e2-faa24c21006e"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
 </sltp_editor>
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="Location">[-7, 0, 967, 1039]</P>
   <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
   <P Name="Open">on</P>
   <P Name="SetExecutionDomain">off</P>
   <P Name="ExecutionDomainType">Deduce</P>
-  <P Name="ZoomFactor">190</P>
+  <P Name="ZoomFactor">125</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">86</P>
+  <P Name="SIDHighWatermark">110</P>
   <P Name="SimulinkSubDomain">Simulink</P>
   <Block BlockType="Reference" Name="AWGN&#xA;Channel1" SID="79">
     <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[380, 61, 475, 119]</P>
+    <P Name="Position">[495, 156, 590, 214]</P>
     <P Name="ZOrder">-1</P>
+    <P Name="HideAutomaticName">off</P>
     <P Name="LibraryVersion">5.0</P>
     <P Name="UserDataPersistent">on</P>
     <P Name="UserData" Ref="bdmxdata:UserData_79"/>
@@ -1116,77 +1140,85 @@ Channel</P>
       <P Name="InputProcessing">Columns as channels (frame based)</P>
       <P Name="seed">67</P>
       <P Name="noiseMode">Signal to noise ratio  (SNR)</P>
-      <P Name="EbNodB">10</P>
-      <P Name="EsNodB">10</P>
-      <P Name="SNRdB">-10</P>
-      <P Name="bitsPerSym">1</P>
+      <P Name="EbNodB">-8</P>
+      <P Name="EsNodB">6</P>
+      <P Name="SNRdB">10</P>
+      <P Name="bitsPerSym">2</P>
       <P Name="Ps">1</P>
       <P Name="Tsym">1/1000</P>
       <P Name="variance">1</P>
     </InstanceData>
   </Block>
-  <Block BlockType="Display" Name="BER1" SID="12">
+  <Block BlockType="Display" Name="BER" SID="12">
     <P Name="Ports">[1]</P>
-    <P Name="Position">[930, 35, 1020, 65]</P>
+    <P Name="Position">[1290, 160, 1380, 190]</P>
     <P Name="ZOrder">-2</P>
+    <P Name="HideAutomaticName">off</P>
     <P Name="Decimation">1</P>
   </Block>
-  <Block BlockType="Reference" Name="BPSK&#xA;Demodulator&#xA;Baseband" SID="6">
+  <Block BlockType="Reference" Name="Bit to Integer&#xA;Converter" SID="110">
     <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[580, 65, 640, 115]</P>
-    <P Name="ZOrder">-3</P>
-    <P Name="LibraryVersion">3.0</P>
-    <P Name="SourceBlock">commdigbbndpm3/BPSK
-Demodulator
-Baseband</P>
-    <P Name="SourceType">BPSK Demodulator Baseband</P>
+    <P Name="Position">[830, 163, 910, 207]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">6.0</P>
+    <P Name="SourceBlock">commutil2/Bit to Integer
+Converter</P>
+    <P Name="SourceType">Bit to Integer Converter</P>
     <P Name="SourceProductBaseCode">CM</P>
     <InstanceData>
       <P Name="MultithreadedSim">auto</P>
-      <P Name="DecType">Hard decision</P>
-      <P Name="VarSource">Dialog</P>
-      <P Name="Variance">1</P>
-      <P Name="Ph">0</P>
+      <P Name="nbits">2</P>
+      <P Name="bitOrder">MSB first</P>
+      <P Name="signedOutputValues">Unsigned</P>
       <P Name="outDtype">Inherit via internal rule</P>
-      <P Name="derotateFactorDTMode">Same word length as input</P>
-      <P Name="derotateFactorWordLen">16</P>
-      <P Name="derotateFactorDataTypeStr">Inherit: Same word length as input</P>
-      <P Name="derotateFactorLastDataTypeStr">Inherit: Same word length as input</P>
-    </InstanceData>
-  </Block>
-  <Block BlockType="Reference" Name="BPSK&#xA;Modulator&#xA;Baseband" SID="7">
-    <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[225, 66, 300, 114]</P>
-    <P Name="ZOrder">-4</P>
-    <P Name="LibraryVersion">3.0</P>
-    <P Name="SourceBlock">commdigbbndpm3/BPSK
-Modulator
-Baseband</P>
-    <P Name="SourceType">BPSK Modulator Baseband</P>
-    <P Name="SourceProductBaseCode">CM</P>
-    <InstanceData>
-      <P Name="MultithreadedSim">auto</P>
-      <P Name="Ph">0</P>
-      <P Name="outDtype">double</P>
-      <P Name="outWordLen">16</P>
-      <P Name="outUDDataType">sfix(16)</P>
-      <P Name="outFracLenMode">Best precision</P>
-      <P Name="outFracLen">15</P>
-      <P Name="outDataTypeStr">double</P>
-      <P Name="outLastDataTypeStr">double</P>
+      <P Name="outDtypeSigned">Inherit via internal rule</P>
     </InstanceData>
   </Block>
   <Block BlockType="Demux" Name="Demux" SID="32">
     <P Name="Ports">[1, 3]</P>
-    <P Name="Position">[885, 61, 890, 99]</P>
+    <P Name="Position">[1245, 186, 1250, 224]</P>
     <P Name="ZOrder">-5</P>
-    <P Name="ShowName">off</P>
+    <P Name="HideAutomaticName">off</P>
     <P Name="Outputs">3</P>
+  </Block>
+  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope" SID="101">
+    <P Name="Tag">ScatterPlot</P>
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[465, 19, 540, 71]</P>
+    <P Name="ZOrder">15</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;Marker&apos;,&apos;*&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[680 558 420 420],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+  </Block>
+  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope2" SID="106">
+    <P Name="Tag">ScatterPlot</P>
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[635, 19, 710, 71]</P>
+    <P Name="ZOrder">20</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[680 558 420 420],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+  </Block>
+  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Signal Trajectory&#xA;Scope" SID="102">
+    <P Name="Tag">SignalTrajectory</P>
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[465, 294, 540, 346]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SamplesPerSymbol&apos;,&apos;8&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Signal Trajectory&apos;,&apos;Trajectory&apos;,true,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[219 386 420 420],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+  </Block>
+  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Signal Trajectory&#xA;Scope2" SID="105">
+    <P Name="Tag">SignalTrajectory</P>
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[635, 294, 710, 346]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SamplesPerSymbol&apos;,&apos;8&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Signal Trajectory&apos;,&apos;Trajectory&apos;,true,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[417 144 420 420],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
   </Block>
   <Block BlockType="Reference" Name="Error Rate&#xA;Calculation" SID="10">
     <P Name="Ports">[2, 1]</P>
-    <P Name="Position">[785, 52, 860, 103]</P>
+    <P Name="Position">[1025, 147, 1100, 198]</P>
     <P Name="ZOrder">-6</P>
+    <P Name="HideAutomaticName">off</P>
     <P Name="LibraryVersion">10.0</P>
     <P Name="SourceBlock">commsink2/Error Rate
 Calculation</P>
@@ -1194,7 +1226,7 @@ Calculation</P>
     <P Name="SourceProductBaseCode">CM</P>
     <InstanceData>
       <P Name="MultithreadedSim">auto</P>
-      <P Name="N">0</P>
+      <P Name="N">1</P>
       <P Name="st_delay">0</P>
       <P Name="cp_mode">Entire frame</P>
       <P Name="subframe">[]</P>
@@ -1206,16 +1238,100 @@ Calculation</P>
       <P Name="maxBits">1e6</P>
     </InstanceData>
   </Block>
-  <Block BlockType="Display" Name="Errors1" SID="34">
+  <Block BlockType="Display" Name="Errors" SID="34">
     <P Name="Ports">[1]</P>
-    <P Name="Position">[930, 85, 1020, 115]</P>
+    <P Name="Position">[1290, 210, 1380, 240]</P>
     <P Name="ZOrder">-7</P>
+    <P Name="HideAutomaticName">off</P>
     <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Reference" Name="Integer to Bit&#xA;Converter" SID="109">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[155, 163, 235, 207]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">6.0</P>
+    <P Name="SourceBlock">commutil2/Integer to Bit
+Converter</P>
+    <P Name="SourceType">Integer to Bit Converter</P>
+    <P Name="SourceProductBaseCode">CM</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="nbits">2</P>
+      <P Name="signedInputValues">Unsigned</P>
+      <P Name="bitOrder">MSB first</P>
+      <P Name="outDtype">Inherit via internal rule</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="OQPSK&#xA;Demodulator&#xA;Baseband" SID="108">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[695, 160, 770, 210]</P>
+    <P Name="ZOrder">22</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">3.0</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_108"/>
+    <P Name="SourceBlock">commdigbbndpm3/OQPSK
+Demodulator
+Baseband</P>
+    <P Name="SourceType">OQPSK Demodulator Baseband</P>
+    <P Name="SourceProductBaseCode">CM</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="OutType">Bit</P>
+      <P Name="Ph">0</P>
+      <P Name="Mapping">Gray</P>
+      <P Name="pulseShape">Custom</P>
+      <P Name="num">[0.7071 0.7071]</P>
+      <P Name="rolloff">0.2</P>
+      <P Name="filterSpan">10</P>
+      <P Name="sps">2</P>
+      <P Name="RateOptions">Enforce single-rate processing</P>
+      <P Name="outDtype2">double</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="OQPSK&#xA;Modulator&#xA;Baseband" SID="107">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[350, 160, 425, 210]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">3.0</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_107"/>
+    <P Name="SourceBlock">commdigbbndpm3/OQPSK
+Modulator
+Baseband</P>
+    <P Name="SourceType">OQPSK Modulator Baseband</P>
+    <P Name="SourceProductBaseCode">CM</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="InType">Bit</P>
+      <P Name="Ph">0</P>
+      <P Name="Mapping">Gray</P>
+      <P Name="pulseShape">Custom</P>
+      <P Name="num">[0.7071 0.7071]</P>
+      <P Name="rolloff">0.2</P>
+      <P Name="filterSpan">10</P>
+      <P Name="sps">2</P>
+      <P Name="RateOptions">Enforce single-rate processing</P>
+      <P Name="outDtype">double</P>
+    </InstanceData>
   </Block>
   <Block BlockType="Reference" Name="Random Integer&#xA;Generator" SID="1">
     <P Name="Ports">[0, 1]</P>
-    <P Name="Position">[40, 68, 120, 112]</P>
+    <P Name="Position">[20, 163, 100, 207]</P>
     <P Name="ZOrder">-8</P>
+    <P Name="HideAutomaticName">off</P>
     <P Name="LibraryVersion">1.139</P>
     <P Name="FontName">Arial</P>
     <P Name="SourceBlock">commrandsrc2/Random Integer
@@ -1229,97 +1345,113 @@ Generator</P>
       <P Name="RTWMemSecDataInternal">Inherit from model</P>
       <P Name="RTWMemSecDataParameters">Inherit from model</P>
       <P Name="ContentPreviewEnabled">off</P>
-      <P Name="mul">2</P>
+      <P Name="mul">4</P>
       <P Name="seed">35</P>
       <P Name="Ts">1/1000</P>
       <P Name="frameBased">off</P>
-      <P Name="sampPerFrame">1</P>
+      <P Name="sampPerFrame">5</P>
       <P Name="orient">off</P>
       <P Name="outDataType">double</P>
     </InstanceData>
   </Block>
-  <Block BlockType="Display" Name="Symbols1" SID="35">
+  <Block BlockType="Display" Name="Symbols" SID="35">
     <P Name="Ports">[1]</P>
-    <P Name="Position">[930, 135, 1020, 165]</P>
+    <P Name="Position">[1290, 260, 1380, 290]</P>
     <P Name="ZOrder">-9</P>
+    <P Name="HideAutomaticName">off</P>
     <P Name="Decimation">1</P>
-  </Block>
-  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope" SID="77">
-    <P Name="Tag">ScatterPlot</P>
-    <P Name="Ports">[1]</P>
-    <P Name="Position">[125, 14, 200, 66]</P>
-    <P Name="ZOrder">-10</P>
-    <P Name="IOType">viewer</P>
-    <List ListType="IOSignalStrings">
-      <P Name="set0ParseKeys">26</P>
-      <P Name="set0Sigs">BPSK Modulator Baseband:o1</P>
-    </List>
-    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;Marker&apos;,&apos;*&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;*&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[163 -75 630 630],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
-  </Block>
-  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope1" SID="80">
-    <P Name="Tag">ScatterPlot</P>
-    <P Name="Ports">[1]</P>
-    <P Name="Position">[125, 14, 200, 66]</P>
-    <P Name="ZOrder">-11</P>
-    <P Name="IOType">viewer</P>
-    <List ListType="IOSignalStrings">
-      <P Name="set0ParseKeys">16</P>
-      <P Name="set0Sigs">AWGN Channel1:o1</P>
-    </List>
-    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[984 -33 630 630],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
   </Block>
   <Line>
     <P Name="ZOrder">1</P>
-    <P Name="Src">1#out:1</P>
-    <P Name="Points">[30, 0]</P>
-    <Branch>
-      <P Name="ZOrder">2</P>
-      <P Name="Dst">7#in:1</P>
-    </Branch>
-    <Branch>
-      <P Name="ZOrder">3</P>
-      <P Name="Points">[0, -60; 615, 0]</P>
-      <P Name="Dst">10#in:1</P>
-    </Branch>
-  </Line>
-  <Line>
-    <P Name="ZOrder">4</P>
     <P Name="Src">32#out:1</P>
     <P Name="Points">[10, 0; 0, -20]</P>
     <P Name="Dst">12#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">5</P>
+    <P Name="ZOrder">2</P>
     <P Name="Src">32#out:2</P>
     <P Name="Points">[15, 0; 0, 20]</P>
     <P Name="Dst">34#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">6</P>
+    <P Name="ZOrder">3</P>
     <P Name="Labels">[1, 0]</P>
     <P Name="Src">32#out:3</P>
     <P Name="Points">[0, 60]</P>
     <P Name="Dst">35#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">7</P>
+    <P Name="ZOrder">4</P>
     <P Name="Src">10#out:1</P>
+    <P Name="Points">[9, 0; 0, 30]</P>
     <P Name="Dst">32#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">8</P>
-    <P Name="Src">7#out:1</P>
-    <P Name="Dst">79#in:1</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">107#out:1</P>
+    <P Name="Points">[9, 0]</P>
+    <Branch>
+      <P Name="ZOrder">6</P>
+      <P Name="Points">[0, 135]</P>
+      <P Name="Dst">102#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">7</P>
+      <P Name="Points">[0, -140]</P>
+      <P Name="Dst">101#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">8</P>
+      <P Name="Dst">79#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">9</P>
     <P Name="Src">79#out:1</P>
-    <P Name="Dst">6#in:1</P>
+    <P Name="Points">[13, 0]</P>
+    <Branch>
+      <P Name="ZOrder">10</P>
+      <P Name="Dst">108#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Points">[0, 135]</P>
+      <P Name="Dst">105#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">12</P>
+      <P Name="Points">[0, -140]</P>
+      <P Name="Dst">106#in:1</P>
+    </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">10</P>
-    <P Name="Src">6#out:1</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Points">[18, 0]</P>
+    <Branch>
+      <P Name="ZOrder">14</P>
+      <P Name="Points">[0, -181; 844, 0; 0, 156]</P>
+      <P Name="Dst">10#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">15</P>
+      <P Name="Dst">109#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">109#out:1</P>
+    <P Name="Dst">107#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">110#out:1</P>
     <P Name="Dst">10#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">108#out:1</P>
+    <P Name="Dst">110#in:1</P>
   </Line>
 </System>
 
@@ -1329,7 +1461,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
   <Object PropName="BdWindowsInfo" ObjectID="1" ClassName="Simulink.BDWindowsInfo">
     <Object PropName="WindowsInfo" ObjectID="2" ClassName="Simulink.WindowInfo">
       <P Name="IsActive" Class="logical">1</P>
-      <P Name="Location" Class="double">[-8.0, -8.0, 1936.0, 1048.0]</P>
+      <P Name="Location" Class="double">[-7.0, 0.0, 974.0, 1039.0]</P>
       <Object PropName="ModelBrowserInfo" ObjectID="3" ClassName="Simulink.ModelBrowserInfo">
         <P Name="Visible" Class="logical">0</P>
         <P Name="DockPosition" Class="char">Left</P>
@@ -1346,10 +1478,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <P Name="IsTabbed" Class="logical">1</P>
         <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
         <P Name="LoadSaveID" Class="char">0</P>
-        <P Name="Extents" Class="double">[1882.0, 806.0]</P>
-        <P Name="ZoomFactor" Class="double">1.8959183673469386</P>
-        <P Name="Offset" Class="double">[32.615715823466076, -107.88051668460714]</P>
-        <P Name="SceneRectInView" Class="double">[32.615715823466076, -107.88051668460714, 992.65877287405817, 425.12378902045214]</P>
+        <P Name="Extents" Class="double">[920.0, 797.0]</P>
+        <P Name="ZoomFactor" Class="double">1.25</P>
+        <P Name="Offset" Class="double">[654.47388649425909, -135.71451149425283]</P>
+        <P Name="SceneRectInView" Class="double">[654.47388649425909, -135.71451149425283, 736.0, 637.6]</P>
       </Object>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
         <Object ObjectID="6">
@@ -1378,11 +1510,11 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADY/wCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAA2MAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAFZAP///wAAB4AAAANjAAAAAQAAAAIAAAABAAAAAvwAAAAA</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADY/wCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAA2MAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAFZAP///wAAA74AAANaAAAAAQAAAAIAAAABAAAAAvwAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
-      <P Name="WindowUuid" Class="char">d887ae34-f74a-4f59-be43-27833c3b679f</P>
+      <P Name="WindowUuid" Class="char">16cb90e6-8077-4088-8ccf-1b334a3e5c6d</P>
     </Object>
-    <P Name="BDUuid" Class="char">f28a2fbe-3fcc-47eb-b18a-991aebb96d15</P>
+    <P Name="BDUuid" Class="char">aee4b2da-9092-441c-9f52-882f6ff96234</P>
   </Object>
 </WindowsInfo>
 
