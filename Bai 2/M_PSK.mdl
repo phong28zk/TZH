@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-05-10T13:33:11Z</dcterms:created>
   <dc:creator>Ammar</dc:creator>
   <cp:lastModifiedBy>Leon8dem1god</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-04-19T02:20:28Z</dcterms:modified>
-  <cp:revision>18.2</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-04-19T02:20:20Z</dcterms:modified>
+  <cp:revision>18.0</cp:revision>
   <cp:version>R2021b</cp:version>
 </cp:coreProperties>
 
@@ -60,7 +60,7 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2014/corePropertiesExtension">
-  <uuid>bd484625-2906-4e25-8274-8a823404b5cf</uuid>
+  <uuid>737f2e22-851d-4ca7-895d-67fd63255000</uuid>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
@@ -134,13 +134,13 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ModelInformation Version="1.0">
   <Model>
-    <P Name="ModelUUID">05012f97-4be2-4138-b5f7-74fb56fe4142</P>
+    <P Name="ModelUUID">a9d1ee84-8485-490e-93bf-b73ce2284c2e</P>
     <P Name="LastSavedArchitecture">win64</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">603796716</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:18.2&gt;</P>
+      <P Name="RTWModifiedTimeStamp">603793127</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:18.0&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -184,7 +184,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
         <P Name="StartTime">0.0</P>
-        <P Name="StopTime">10</P>
+        <P Name="StopTime">100</P>
         <P Name="AbsTol">auto</P>
         <P Name="AutoScaleAbsTol">on</P>
         <P Name="FixedStep">auto</P>
@@ -948,26 +948,26 @@ Calculation</P>
     <P Name="Type">LIBRARY_BLOCK</P>
   </ExternalFileReference>
   <ExternalFileReference>
+    <P Name="Reference">commdigbbndpm3/M-PSK
+Demodulator
+Baseband</P>
+    <P Name="Path">$bdroot/M-PSK Demodulator Baseband</P>
+    <P Name="SID">92</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">commdigbbndpm3/M-PSK
+Modulator
+Baseband</P>
+    <P Name="Path">$bdroot/M-PSK Modulator Baseband</P>
+    <P Name="SID">94</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
     <P Name="Reference">commrandsrc2/Random Integer
 Generator</P>
     <P Name="Path">$bdroot/Random Integer Generator</P>
     <P Name="SID">1</P>
-    <P Name="Type">LIBRARY_BLOCK</P>
-  </ExternalFileReference>
-  <ExternalFileReference>
-    <P Name="Reference">commdigbbndam3/Rectangular QAM
-Demodulator
-Baseband</P>
-    <P Name="Path">$bdroot/Rectangular QAM Demodulator Baseband</P>
-    <P Name="SID">93</P>
-    <P Name="Type">LIBRARY_BLOCK</P>
-  </ExternalFileReference>
-  <ExternalFileReference>
-    <P Name="Reference">commdigbbndam3/Rectangular QAM
-Modulator
-Baseband</P>
-    <P Name="Path">$bdroot/Rectangular QAM Modulator Baseband</P>
-    <P Name="SID">92</P>
     <P Name="Type">LIBRARY_BLOCK</P>
   </ExternalFileReference>
   <P Name="OrderedModelArguments">1</P>
@@ -976,8 +976,8 @@ Baseband</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="d3def165-3a7d-4aaa-8a60-6cc9f43735b5">
-    <Interface type="Interface" uuid="1e265cef-9513-4c7e-9670-878681b7b1a1"/>
+  <System type="System" uuid="2f4e596a-dbc4-4f29-9cb9-c5f2bf876a62">
+    <Interface type="Interface" uuid="bb307407-77ba-4847-abf4-aba6d9ab959a"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
@@ -989,27 +989,27 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="daf397e2-19ba-47e8-854f-12d6aeff4401">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="758bd663-c9a0-4b07-af28-771c69bca1dc">
     <priorityDirection>HighNumberLast</priorityDirection>
-    <editorState type="sltp.mm.core.EditorState" uuid="0f7996b5-d575-4b84-81d1-f03c1b7e1f3d">
+    <editorState type="sltp.mm.core.EditorState" uuid="3aad5b86-9147-4c71-ac14-9bb65e4f0612">
       <isSynchronized>true</isSynchronized>
-      <panelState type="sltp.mm.core.EditorPanelState" uuid="d3ed1e7e-fa4e-4570-8d85-242651e52c39"/>
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="760992c1-b35f-4c1f-ac70-14cd3a5402eb"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="148c73db-8e83-41b4-8954-2d2cafb2118b">
-      <context type="sltp.mm.core.Context" uuid="daf397e2-19ba-47e8-854f-12d6aeff4401"/>
+    <rootTask type="sltp.mm.core.Task" uuid="904a3268-6f4d-4ea0-8e89-fa2dee284886">
+      <context type="sltp.mm.core.Context" uuid="758bd663-c9a0-4b07-af28-771c69bca1dc"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="886a7b7d-7d57-4ade-a16c-01a56aa6edd3">
-        <tasks type="sltp.mm.core.Task" uuid="8a0ab2c8-8a63-4215-9560-2205b0dc4f66">
+      <subgraph type="sltp.mm.core.Graph" uuid="7679cfae-2d15-42dd-8923-35063eb1587a">
+        <tasks type="sltp.mm.core.Task" uuid="000530f8-b689-4234-a2f2-4af23f6ed6aa">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="daf397e2-19ba-47e8-854f-12d6aeff4401"/>
+          <context type="sltp.mm.core.Context" uuid="758bd663-c9a0-4b07-af28-771c69bca1dc"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>FiM</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="944e5e8e-3658-4b60-a66e-872d4a63ce08">
+          <rates type="sltp.mm.core.Rate" uuid="4cd1d294-a0ec-4421-9026-c587fd4fd2ca">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <identifier>ZOHContinuous01</identifier>
@@ -1019,7 +1019,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="3f9f9be6-71e0-4e39-951b-a82c455e5804">
+          <rates type="sltp.mm.core.Rate" uuid="b35ecd08-4090-4ba6-9c88-1691d53cb2eb">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -1036,9 +1036,27 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2021b_202101212121">
-  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="9c02459b-ad50-45c5-86de-bef10ea57def">
-    <rootGraph type="sltp.mm.syntax.Graph" uuid="fa8efe85-718b-4767-8f0f-55947c64e1ac">
-      <children type="sltp.mm.syntax.Node" uuid="f32dbe64-88d3-4c46-9655-4e27bef1d94e">
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="7c88163e-629f-411e-9dde-f5080b1316c2">
+    <entities type="diagram.editor.model.Entity" uuid="114d350a-5695-4694-8181-a227e904d600">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="060b3436-13a2-48a6-bb1e-514fb946598b"/>
+      <title>FiM</title>
+      <type>base</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="94433798-5753-403c-81dc-cf3d80a24fe5">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="571ed98e-956c-4bcb-b990-ffbb87fea548"/>
+        <title>FiM</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="150220b7-f0c9-4764-9754-bc414b8f4700"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="0d5f1d1c-050a-461c-b7db-7a4b069eb088">
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="150220b7-f0c9-4764-9754-bc414b8f4700">
+      <children type="sltp.mm.syntax.Node" uuid="060b3436-13a2-48a6-bb1e-514fb946598b">
         <priority>40</priority>
         <rates type="sltp.mm.syntax.RateData">
           <color>#808080</color>
@@ -1053,34 +1071,16 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
         </rates>
         <title>FiM</title>
         <type>base</type>
-        <diagramElement type="diagram.editor.model.Entity" uuid="1eedd91e-414a-4a7c-a1a7-53264b9a68c2"/>
-        <subgraph type="sltp.mm.syntax.Graph" uuid="07f9036a-694c-43d8-92f0-e5511da89ecb">
+        <diagramElement type="diagram.editor.model.Entity" uuid="114d350a-5695-4694-8181-a227e904d600"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="571ed98e-956c-4bcb-b990-ffbb87fea548">
           <title>FiM</title>
-          <diagramElement type="diagram.editor.model.Diagram" uuid="841c1f87-9485-4530-91b7-31f903393f6e"/>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="94433798-5753-403c-81dc-cf3d80a24fe5"/>
         </subgraph>
       </children>
       <title>Default</title>
-      <diagramElement type="diagram.editor.model.Diagram" uuid="dcd8f03e-06c8-4a84-9f9e-e9a997af4622"/>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="7c88163e-629f-411e-9dde-f5080b1316c2"/>
     </rootGraph>
   </sltp.mm.syntax.Context>
-  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="dcd8f03e-06c8-4a84-9f9e-e9a997af4622">
-    <entities type="diagram.editor.model.Entity" uuid="1eedd91e-414a-4a7c-a1a7-53264b9a68c2">
-      <position>0,0</position>
-      <size>0,0,0,0</size>
-      <syntaxElement type="sltp.mm.syntax.Node" uuid="f32dbe64-88d3-4c46-9655-4e27bef1d94e"/>
-      <title>FiM</title>
-      <type>base</type>
-      <subDiagram type="diagram.editor.model.Diagram" uuid="841c1f87-9485-4530-91b7-31f903393f6e">
-        <position>0,0</position>
-        <syntaxElement type="sltp.mm.syntax.Graph" uuid="07f9036a-694c-43d8-92f0-e5511da89ecb"/>
-        <title>FiM</title>
-        <type>graph.Graph</type>
-      </subDiagram>
-    </entities>
-    <syntaxElement type="sltp.mm.syntax.Graph" uuid="fa8efe85-718b-4767-8f0f-55947c64e1ac"/>
-    <title>Default</title>
-    <type>graph.Graph</type>
-  </diagram.editor.model.Diagram>
 </sltp_editor>
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1096,7 +1096,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="SimulinkSubDomain">Simulink</P>
   <Block BlockType="Reference" Name="AWGN&#xA;Channel1" SID="79">
     <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[705, 131, 800, 189]</P>
+    <P Name="Position">[575, 61, 670, 119]</P>
     <P Name="ZOrder">-1</P>
     <P Name="LibraryVersion">5.0</P>
     <P Name="UserDataPersistent">on</P>
@@ -1116,9 +1116,9 @@ Channel</P>
       <P Name="seed">67</P>
       <P Name="noiseMode">Signal to noise ratio  (SNR)</P>
       <P Name="EbNodB">-2</P>
-      <P Name="EsNodB">3</P>
-      <P Name="SNRdB">8</P>
-      <P Name="bitsPerSym">2</P>
+      <P Name="EsNodB">6</P>
+      <P Name="SNRdB">10</P>
+      <P Name="bitsPerSym">4</P>
       <P Name="Ps">1</P>
       <P Name="Tsym">1/1000</P>
       <P Name="variance">1</P>
@@ -1139,7 +1139,7 @@ Channel</P>
   </Block>
   <Block BlockType="Reference" Name="Error Rate&#xA;Calculation" SID="10">
     <P Name="Ports">[2, 1]</P>
-    <P Name="Position">[785, 52, 860, 103]</P>
+    <P Name="Position">[900, 52, 975, 103]</P>
     <P Name="ZOrder">-6</P>
     <P Name="LibraryVersion">10.0</P>
     <P Name="SourceBlock">commsink2/Error Rate
@@ -1166,9 +1166,63 @@ Calculation</P>
     <P Name="ZOrder">-7</P>
     <P Name="Decimation">1</P>
   </Block>
+  <Block BlockType="Reference" Name="M-PSK&#xA;Demodulator&#xA;Baseband" SID="92">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[715, 65, 790, 115]</P>
+    <P Name="ZOrder">6</P>
+    <P Name="LibraryVersion">3.0</P>
+    <P Name="SourceBlock">commdigbbndpm3/M-PSK
+Demodulator
+Baseband</P>
+    <P Name="SourceType">M-PSK Demodulator Baseband</P>
+    <P Name="SourceProductBaseCode">CM</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="M">16</P>
+      <P Name="OutType">Integer</P>
+      <P Name="DecType">Hard decision</P>
+      <P Name="VarSource">Dialog</P>
+      <P Name="Variance">1</P>
+      <P Name="Dec">Gray</P>
+      <P Name="Mapping">[0:7]</P>
+      <P Name="Ph">pi/16</P>
+      <P Name="outDtype1">Inherit via internal rule</P>
+      <P Name="outDtype2">Inherit via internal rule</P>
+      <P Name="derotateFactorDTMode">Same word length as input</P>
+      <P Name="derotateFactorWordLen">16</P>
+      <P Name="derotateFactorDataTypeStr">Inherit: Same word length as input</P>
+      <P Name="derotateFactorLastDataTypeStr">Inherit: Same word length as input</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="M-PSK&#xA;Modulator&#xA;Baseband" SID="94">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[435, 64, 510, 116]</P>
+    <P Name="ZOrder">8</P>
+    <P Name="LibraryVersion">3.0</P>
+    <P Name="SourceBlock">commdigbbndpm3/M-PSK
+Modulator
+Baseband</P>
+    <P Name="SourceType">M-PSK Modulator Baseband</P>
+    <P Name="SourceProductBaseCode">CM</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="M">16</P>
+      <P Name="InType">Integer</P>
+      <P Name="Enc">Gray</P>
+      <P Name="Mapping">[0:7]</P>
+      <P Name="Ph">pi/16</P>
+      <P Name="outDtype">double</P>
+      <P Name="outWordLen">16</P>
+      <P Name="outUDDataType">sfix(16)</P>
+      <P Name="outFracLenMode">Best precision</P>
+      <P Name="outFracLen">15</P>
+      <P Name="outDataTypeStr">double</P>
+      <P Name="outLastDataTypeStr">double</P>
+    </InstanceData>
+  </Block>
   <Block BlockType="Reference" Name="Random Integer&#xA;Generator" SID="1">
     <P Name="Ports">[0, 1]</P>
-    <P Name="Position">[50, 68, 130, 112]</P>
+    <P Name="Position">[55, 68, 135, 112]</P>
     <P Name="ZOrder">-8</P>
     <P Name="LibraryVersion">1.139</P>
     <P Name="FontName">Arial</P>
@@ -1183,7 +1237,7 @@ Generator</P>
       <P Name="RTWMemSecDataInternal">Inherit from model</P>
       <P Name="RTWMemSecDataParameters">Inherit from model</P>
       <P Name="ContentPreviewEnabled">off</P>
-      <P Name="mul">8</P>
+      <P Name="mul">16</P>
       <P Name="seed">35</P>
       <P Name="Ts">1/1000</P>
       <P Name="frameBased">off</P>
@@ -1192,101 +1246,19 @@ Generator</P>
       <P Name="outDataType">double</P>
     </InstanceData>
   </Block>
-  <Block BlockType="Reference" Name="Rectangular QAM&#xA;Demodulator&#xA;Baseband" SID="93">
-    <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[880, 134, 955, 186]</P>
-    <P Name="ZOrder">7</P>
-    <P Name="LibraryVersion">3.0</P>
-    <P Name="SourceBlock">commdigbbndam3/Rectangular QAM
-Demodulator
-Baseband</P>
-    <P Name="SourceType">Rectangular QAM Demodulator Baseband</P>
-    <P Name="SourceProductBaseCode">CM</P>
-    <InstanceData>
-      <P Name="MultithreadedSim">auto</P>
-      <P Name="M">8</P>
-      <P Name="OutType">Integer</P>
-      <P Name="DecType">Hard decision</P>
-      <P Name="VarSource">Dialog</P>
-      <P Name="Variance">1</P>
-      <P Name="Dec">Gray</P>
-      <P Name="Mapping">[0:15]</P>
-      <P Name="PowType">Min. distance between symbols</P>
-      <P Name="MinDist">2</P>
-      <P Name="AvgPow">1</P>
-      <P Name="PeakPow">1</P>
-      <P Name="Ph">0</P>
-      <P Name="outDtype1">Inherit via internal rule</P>
-      <P Name="outDtype2">Inherit via internal rule</P>
-      <P Name="derotateFactorDTMode">Same word length as input</P>
-      <P Name="derotateFactorWordLen">16</P>
-      <P Name="derotateFactorDataTypeStr">Inherit: Same word length as input</P>
-      <P Name="derotateFactorLastDataTypeStr">Inherit: Same word length as input</P>
-      <P Name="denormFactorDTMode">Same word length as input</P>
-      <P Name="denormFactorWordLen">16</P>
-      <P Name="denormFactorDataTypeStr">Inherit: Same word length as input</P>
-      <P Name="denormFactorLastDataTypeStr">Inherit: Same word length as input</P>
-      <P Name="prodOutDTMode">Inherit via internal rule</P>
-      <P Name="prodOutWordLen">32</P>
-      <P Name="prodOutDataTypeStr">Inherit: Inherit via internal rule</P>
-      <P Name="prodOutOverflowMode">Wrap</P>
-      <P Name="prodOutRoundingMode">Floor</P>
-      <P Name="prodOutOvFlMode">off</P>
-      <P Name="prodOutLastDataTypeStr">Inherit: Inherit via internal rule</P>
-      <P Name="prodOutOvFlModeLastStrValue">off</P>
-      <P Name="sumDTMode">Inherit via internal rule</P>
-      <P Name="sumWordLen">32</P>
-      <P Name="sumDataTypeStr">Inherit: Inherit via internal rule</P>
-      <P Name="sumLastDataTypeStr">Inherit: Inherit via internal rule</P>
-    </InstanceData>
-  </Block>
-  <Block BlockType="Reference" Name="Rectangular QAM&#xA;Modulator&#xA;Baseband" SID="92">
-    <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[515, 114, 590, 166]</P>
-    <P Name="ZOrder">6</P>
-    <P Name="LibraryVersion">3.0</P>
-    <P Name="SourceBlock">commdigbbndam3/Rectangular QAM
-Modulator
-Baseband</P>
-    <P Name="SourceType">Rectangular QAM Modulator Baseband</P>
-    <P Name="SourceProductBaseCode">CM</P>
-    <InstanceData>
-      <P Name="MultithreadedSim">auto</P>
-      <P Name="M">8</P>
-      <P Name="InType">Integer</P>
-      <P Name="Enc">Gray</P>
-      <P Name="Mapping">[0:15]</P>
-      <P Name="PowType">Min. distance between symbols</P>
-      <P Name="MinDist">2</P>
-      <P Name="AvgPow">1</P>
-      <P Name="PeakPow">1</P>
-      <P Name="Ph">0</P>
-      <P Name="outDtype">double</P>
-      <P Name="outWordLen">16</P>
-      <P Name="outUDDataType">sfix(16)</P>
-      <P Name="outFracLenMode">Best precision</P>
-      <P Name="outFracLen">15</P>
-      <P Name="outDataTypeStr">double</P>
-      <P Name="outLastDataTypeStr">double</P>
-    </InstanceData>
-  </Block>
   <Block BlockType="Display" Name="Symbols1" SID="35">
     <P Name="Ports">[1]</P>
     <P Name="Position">[1045, 135, 1135, 165]</P>
     <P Name="ZOrder">-9</P>
     <P Name="Decimation">1</P>
   </Block>
-  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope" SID="94">
+  <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope" SID="89">
     <P Name="Tag">ScatterPlot</P>
     <P Name="Ports">[1]</P>
     <P Name="Position">[125, 14, 200, 66]</P>
-    <P Name="ZOrder">8</P>
+    <P Name="ZOrder">3</P>
     <P Name="IOType">viewer</P>
-    <List ListType="IOSignalStrings">
-      <P Name="set0ParseKeys">37</P>
-      <P Name="set0Sigs">Rectangular QAM Modulator Baseband:o1</P>
-    </List>
-    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-8.5&apos;,&apos;MaxYLim&apos;,&apos;8.5&apos;,&apos;MinXLim&apos;,&apos;-8.5&apos;,&apos;MaxXLim&apos;,&apos;8.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[1418 102 148 93],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[841 50 194 205],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
   </Block>
   <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope1" SID="91">
     <P Name="Tag">ScatterPlot</P>
@@ -1298,21 +1270,20 @@ Baseband</P>
       <P Name="set0ParseKeys">16</P>
       <P Name="set0Sigs">AWGN Channel1:o1</P>
     </List>
-    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-8.5&apos;,&apos;MaxYLim&apos;,&apos;8.5&apos;,&apos;MinXLim&apos;,&apos;-8.5&apos;,&apos;MaxXLim&apos;,&apos;8.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[1237 98 143 37],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[1172 109 176 130])</P>
   </Block>
   <Line>
     <P Name="ZOrder">1</P>
     <P Name="Src">1#out:1</P>
-    <P Name="Points">[20, 0]</P>
+    <P Name="Points">[15, 0]</P>
     <Branch>
-      <P Name="ZOrder">2</P>
-      <P Name="Points">[0, 50]</P>
-      <P Name="Dst">92#in:1</P>
+      <P Name="ZOrder">16</P>
+      <P Name="Points">[0, -53; 623, 0; 0, 28]</P>
+      <P Name="Dst">10#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">3</P>
-      <P Name="Points">[0, -60; 615, 0]</P>
-      <P Name="Dst">10#in:1</P>
+      <P Name="ZOrder">15</P>
+      <P Name="Dst">94#in:1</P>
     </Branch>
   </Line>
   <Line>
@@ -1340,20 +1311,18 @@ Baseband</P>
     <P Name="Dst">32#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">8</P>
-    <P Name="Src">92#out:1</P>
-    <P Name="Points">[53, 0; 0, 20]</P>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">94#out:1</P>
     <P Name="Dst">79#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">9</P>
+    <P Name="ZOrder">14</P>
     <P Name="Src">79#out:1</P>
-    <P Name="Dst">93#in:1</P>
+    <P Name="Dst">92#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">10</P>
-    <P Name="Src">93#out:1</P>
-    <P Name="Points">[19, 0; 0, -41; -218, 0; 0, -29]</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">92#out:1</P>
     <P Name="Dst">10#in:2</P>
   </Line>
 </System>
@@ -1383,11 +1352,23 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <P Name="LoadSaveID" Class="char">0</P>
         <P Name="Extents" Class="double">[920.0, 797.0]</P>
         <P Name="ZoomFactor" Class="double">1.5</P>
-        <P Name="Offset" Class="double">[530.53333333333114, -25.563187615863114]</P>
-        <P Name="SceneRectInView" Class="double">[530.53333333333114, -25.563187615863114, 613.33333333333337, 531.33333333333337]</P>
+        <P Name="Offset" Class="double">[530.53333333332807, -25.563187615863114]</P>
+        <P Name="SceneRectInView" Class="double">[530.53333333332807, -25.563187615863114, 613.33333333333337, 531.33333333333337]</P>
       </Object>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
         <Object ObjectID="6">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="7">
           <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
           <P Name="ID" Class="char">Referenced Files</P>
           <P Name="Visible" Class="logical">0</P>
@@ -1400,24 +1381,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Height" Class="int32">480</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
-        <Object ObjectID="7">
-          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
-          <P Name="ID" Class="char">Property Inspector</P>
-          <P Name="Visible" Class="logical">0</P>
-          <P Name="CreateCallback" Class="char"/>
-          <P Name="UserData" Class="char"/>
-          <P Name="Floating" Class="logical">0</P>
-          <P Name="DockPosition" Class="char">Right</P>
-          <P Name="Width" Class="int32">640</P>
-          <P Name="Height" Class="int32">480</P>
-          <P Name="Minimized" Class="char">Unset</P>
-        </Object>
       </Array>
       <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAFZAP///wAAA74AAANaAAAAAQAAAAIAAAABAAAAAvwAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
-      <P Name="WindowUuid" Class="char">c0b9df06-0688-4e90-a542-4beca71a09cc</P>
+      <P Name="WindowUuid" Class="char">6863e481-71ee-4383-8c4e-2d879fb706e9</P>
     </Object>
-    <P Name="BDUuid" Class="char">59722b69-7d7a-4c39-b93c-569a99d421b7</P>
+    <P Name="BDUuid" Class="char">29d3d8fd-1fa2-41aa-80c4-ed88a0498601</P>
   </Object>
 </WindowsInfo>
 

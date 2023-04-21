@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-05-10T13:33:11Z</dcterms:created>
   <dc:creator>Ammar</dc:creator>
   <cp:lastModifiedBy>Leon8dem1god</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-04-18T14:30:41Z</dcterms:modified>
-  <cp:revision>14.0</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-04-19T02:20:25Z</dcterms:modified>
+  <cp:revision>14.1</cp:revision>
   <cp:version>R2021b</cp:version>
 </cp:coreProperties>
 
@@ -140,8 +140,8 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">603754078</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:14.0&gt;</P>
+      <P Name="RTWModifiedTimeStamp">603792859</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:14.1&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -185,7 +185,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
         <P Name="StartTime">0.0</P>
-        <P Name="StopTime">100</P>
+        <P Name="StopTime">1000</P>
         <P Name="AbsTol">auto</P>
         <P Name="AutoScaleAbsTol">on</P>
         <P Name="FixedStep">auto</P>
@@ -977,8 +977,8 @@ Generator</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="db61d4b1-79b1-4f29-a6b8-bfd901c9f600">
-    <Interface type="Interface" uuid="ae4c7ee5-ec18-4c96-b5a6-034dc9af3fba"/>
+  <System type="System" uuid="6d426ca6-5236-4611-8a84-9c25cec41819">
+    <Interface type="Interface" uuid="7e04377c-0214-440f-91b2-0217c34a8d9b"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
@@ -990,27 +990,27 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="49b34044-d2a0-4327-ad89-c6e0f62ed2f8">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="34fb3156-60d0-48dd-b177-ababfa1c97be">
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="344b6b43-7c6d-4cff-a4d5-6905d60387e0">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="736a5ea5-c5d5-461a-9eca-9b80f9af3f11"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="ee923a3f-60ca-40f0-8b56-2aee9ca87b3d">
-      <context type="sltp.mm.core.Context" uuid="49b34044-d2a0-4327-ad89-c6e0f62ed2f8"/>
+    <rootTask type="sltp.mm.core.Task" uuid="9cf1c98c-bdb7-465e-bc40-940856d05045">
+      <context type="sltp.mm.core.Context" uuid="34fb3156-60d0-48dd-b177-ababfa1c97be"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="5f633f34-738d-4085-a6b6-d8d10db8690d">
-        <tasks type="sltp.mm.core.Task" uuid="ed8f7281-98bb-49b5-bb88-4ce1d5e88aab">
+      <subgraph type="sltp.mm.core.Graph" uuid="5d55a76a-0c57-4b4c-87e0-14d7f6d508d6">
+        <tasks type="sltp.mm.core.Task" uuid="8a0d8862-991a-407c-8058-fcfcfc870028">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="49b34044-d2a0-4327-ad89-c6e0f62ed2f8"/>
+          <context type="sltp.mm.core.Context" uuid="34fb3156-60d0-48dd-b177-ababfa1c97be"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>FiM</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="1e6ec808-045f-48dd-9b55-79a6adcd3558">
+          <rates type="sltp.mm.core.Rate" uuid="8ad73c00-1185-4354-8754-304dd05608bb">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <identifier>ZOHContinuous01</identifier>
@@ -1020,7 +1020,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="6c0806ec-fc6d-4805-8316-5922876bb1e2">
+          <rates type="sltp.mm.core.Rate" uuid="fa3c83c6-5ae3-457d-b013-4429750bb239">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -1086,12 +1086,12 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="Location">[-7, 0, 967, 1039]</P>
   <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
   <P Name="Open">on</P>
   <P Name="SetExecutionDomain">off</P>
   <P Name="ExecutionDomainType">Deduce</P>
-  <P Name="ZoomFactor">190</P>
+  <P Name="ZoomFactor">125</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">86</P>
   <P Name="SimulinkSubDomain">Simulink</P>
@@ -1118,7 +1118,7 @@ Channel</P>
       <P Name="noiseMode">Signal to noise ratio  (SNR)</P>
       <P Name="EbNodB">10</P>
       <P Name="EsNodB">10</P>
-      <P Name="SNRdB">-10</P>
+      <P Name="SNRdB">10</P>
       <P Name="bitsPerSym">1</P>
       <P Name="Ps">1</P>
       <P Name="Tsym">1/1000</P>
@@ -1254,7 +1254,7 @@ Generator</P>
       <P Name="set0ParseKeys">26</P>
       <P Name="set0Sigs">BPSK Modulator Baseband:o1</P>
     </List>
-    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;Marker&apos;,&apos;*&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;*&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[163 -75 630 630],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;Marker&apos;,&apos;*&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;*&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[673 -75 120 98],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
   </Block>
   <Block BlockType="ConstellationDiagram" Name="Discrete-Time&#xA;Scatter Plot&#xA;Scope1" SID="80">
     <P Name="Tag">ScatterPlot</P>
@@ -1266,7 +1266,7 @@ Generator</P>
       <P Name="set0ParseKeys">16</P>
       <P Name="set0Sigs">AWGN Channel1:o1</P>
     </List>
-    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[984 -33 630 630],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
+    <P Name="ScopeSpecificationString">comm.scopes.ConstellationDiagramBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Constellation&apos;,true,&apos;MinYLim&apos;,&apos;-1.5&apos;,&apos;MaxYLim&apos;,&apos;1.5&apos;,&apos;MinXLim&apos;,&apos;-1.5&apos;,&apos;MaxXLim&apos;,&apos;1.5&apos;,&apos;SymbolsToDisplayFromInput&apos;,false,&apos;SymbolsToDisplay&apos;,&apos;40&apos;,&apos;LineColor&apos;,&apos;b&apos;,&apos;ColorFading&apos;,true,&apos;ShowRefConstellation&apos;,false,&apos;Title&apos;,&apos;Scatter Plot&apos;,&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;none&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;.&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922]),&apos;AuxLineProperties&apos;,struct(&apos;LineColor&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;TrajLineWidth&apos;,0.5,&apos;RefConStyle&apos;,&apos;+&apos;,&apos;RefConSize&apos;,6,&apos;RefConColor&apos;,[1 0 0],&apos;RefConLineWidth&apos;,0.5)),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2021b&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true)),&apos;Version&apos;,&apos;2021b&apos;,&apos;Position&apos;,[1494 -33 120 25],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
   </Block>
   <Line>
     <P Name="ZOrder">1</P>
@@ -1329,7 +1329,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
   <Object PropName="BdWindowsInfo" ObjectID="1" ClassName="Simulink.BDWindowsInfo">
     <Object PropName="WindowsInfo" ObjectID="2" ClassName="Simulink.WindowInfo">
       <P Name="IsActive" Class="logical">1</P>
-      <P Name="Location" Class="double">[-8.0, -8.0, 1936.0, 1048.0]</P>
+      <P Name="Location" Class="double">[-7.0, 0.0, 974.0, 1039.0]</P>
       <Object PropName="ModelBrowserInfo" ObjectID="3" ClassName="Simulink.ModelBrowserInfo">
         <P Name="Visible" Class="logical">0</P>
         <P Name="DockPosition" Class="char">Left</P>
@@ -1346,10 +1346,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <P Name="IsTabbed" Class="logical">1</P>
         <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
         <P Name="LoadSaveID" Class="char">0</P>
-        <P Name="Extents" Class="double">[1882.0, 806.0]</P>
-        <P Name="ZoomFactor" Class="double">1.8959183673469386</P>
-        <P Name="Offset" Class="double">[32.615715823466076, -107.88051668460714]</P>
-        <P Name="SceneRectInView" Class="double">[32.615715823466076, -107.88051668460714, 992.65877287405817, 425.12378902045214]</P>
+        <P Name="Extents" Class="double">[920.0, 797.0]</P>
+        <P Name="ZoomFactor" Class="double">1.25</P>
+        <P Name="Offset" Class="double">[327.84413347685586, -264.59741657696452]</P>
+        <P Name="SceneRectInView" Class="double">[327.84413347685586, -264.59741657696452, 736.0, 637.6]</P>
       </Object>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
         <Object ObjectID="6">
@@ -1378,7 +1378,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADY/wCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAA2MAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAFZAP///wAAB4AAAANjAAAAAQAAAAIAAAABAAAAAvwAAAAA</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADY/wCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAA2MAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAFZAP///wAAA74AAANaAAAAAQAAAAIAAAABAAAAAvwAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">d887ae34-f74a-4f59-be43-27833c3b679f</P>
     </Object>
